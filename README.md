@@ -14,6 +14,7 @@ Below each thumbnail, you'll see three buttons:
 - Allowed (green): Adds the channel to the "Allowed" category.
 - Neutral (yellow): Adds the channel to the "Neutral" category.
 - Discouraged (red): Adds the channel to the "Discouraged" category.
+
 Depending on the category, thumbnails will change their visual style to indicate the user’s preference.
 
 You could also unassign any already assigned channel, by clicking the blue button.
