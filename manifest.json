@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "YT shepherd",
+  "version": "1.0",
+  "authors": [{
+    "email": "mariusz-kowalski@interia.pl"
+  }],
+  "description": "Allows you to categorize YouTube channels into InspireList, NeutralList, or AvoidList, and adjusts how their videos are displayed based on their category",
+  "icons": { "48": "icons/pasterz-48.png" , "64": "icons/pasterz-64.png", "128": "icons/pasterz-128.png" },
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/pepestop-48.png"
+  },
+  "background": {
+    "scripts": ["background-script.js"],
+    "persistent": true,
+    "type": "module"
+  }
+}

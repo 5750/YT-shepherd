@@ -1,0 +1,60 @@
+ytd-rich-item-renderer {
+    transition: filter 500ms;
+}
+ytd-rich-item-renderer:not([ListAssigned]),
+ytd-rich-item-renderer[ListAssigned='none'] #thumbnail {
+    filter: sepia(100%);
+    &:hover {
+        filter: sepia(0%);
+    }
+}
+ytd-rich-item-renderer[ListAssigned='InspireList'] #thumbnail {
+    filter: none;
+}
+ytd-rich-item-renderer[ListAssigned='NeutralList'] #thumbnail {
+    filter: grayscale(50%) brightness(75%);
+}
+ytd-rich-item-renderer[ListAssigned='AvoidList'] #thumbnail {
+    filter: grayscale(100%) brightness(30%);    
+}
+.YT-Shepherd-buttons-container {
+   display: flex;
+}
+.YT-Shepherd-button {
+    font-weight: 900;
+    border: none;
+    height: 2ex;
+    width: 2ex;
+    color: #fff;
+
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    padding: 2px;
+    margin-left: 5px;
+}
+.YT-Shepherd-button:hover {
+    transform: scale(1.5);
+}
+:is(
+    ytd-rich-item-renderer:not([ListAssigned]),
+    ytd-rich-item-renderer[ListAssigned='none']
+) {
+    & .YT-Shepherd-button.unassignBtn {
+        display: none;
+    }
+    & .YT-Shepherd-button:not(.unassignBtn) {
+        display: inline;
+    }
+}
+ytd-rich-item-renderer[ListAssigned]:not([ListAssigned='none']) {
+    & .YT-Shepherd-button.unassignBtn {
+        display: inline;
+    }
+    & .YT-Shepherd-button:not(.unassignBtn) {
+        display: none;
+    }
+}
