@@ -5,7 +5,8 @@ YT Shepherd is a Firefox add-on that lets you categorize YouTube channels as Rec
 
 ## Installation
 Download the repository: Code -> Download ZIP
-Then, in Firefox, go to about:debugging, click "This Firefox", then "Load Temporary Add-on" and select the extension file.
+Then unpack the ZIP
+Then, in Firefox, go to about:debugging, click "This Firefox", then "Load Temporary Add-on" and select the _manifest.json_ file.
 
 ## Usage
 Once the extension is installed, navigate to any YouTube video page.
