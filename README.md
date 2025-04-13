@@ -10,7 +10,8 @@ Then, in Firefox, go to about:debugging#/runtime/this-firefox -> "Load Temporary
 ## Usage
 Once the extension is installed, navigate to any YouTube video page.
 Below each thumbnail, you'll see three buttons:
-- Allowed: Adds the channel to the "Allowed" category.
-- Neutral: Adds the channel to the "Neutral" category.
-- Discouraged: Adds the channel to the "Discouraged" category.
+- Allowed (green): Adds the channel to the "Allowed" category.
+- Neutral (yellow): Adds the channel to the "Neutral" category.
+- Discouraged (red): Adds the channel to the "Discouraged" category.
 Depending on the category, thumbnails will change their visual style to indicate the user’s preference.
+You could also unassign any already assigned channel, by clicking the blue button.
